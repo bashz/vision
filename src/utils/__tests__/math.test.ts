@@ -1,14 +1,14 @@
 import {
-  indentity, sign, clamp, signfulPower, normalize, interpolate, logNormalize, logInterpolate,
+  identity, sign, clamp, signfulPower, normalize, interpolate, logNormalize, logInterpolate,
   transformLinear, transformExp, transformLog, transformPower, transformSymexp, transformSymlog,
   logFactory, powFactory, symlogFactory, symexpFactory, clampFactory
 } from '../'
 describe('Math functions', () => {
   describe('identity', () => {
     it('should return the input', () => {
-      const stringOutput = indentity<string>('3');
+      const stringOutput = identity<string>('3');
       expect(stringOutput).toBe('3');
-      const numberOutput = indentity<number>(4);
+      const numberOutput = identity<number>(4);
       expect(numberOutput).toBe(4);
     })
   })

@@ -1,18 +1,25 @@
-import { VizAnimation, animate } from './VizAnimation';
+import { identity } from '../../utils';
+import { in2out, out2in, in2inOut, out2inOut } from './inOut';
 import {
-  in2out, out2in, in2inOut, out2inOut,
   easeCubicIn, easeCubicInOut, easeCubicOut,
   easeQuadIn, easeQuadInOut, easeQuadOut,
   easeQuartIn, easeQuartInOut, easeQuartOut,
-  easeQuintIn, easeQuintInOut, easeQuintOut,
+  easeQuintIn, easeQuintInOut, easeQuintOut
+} from './poly';
+import {
   easeCircIn, easeCircInOut, easeCircOut,
   easeExpoIn, easeExpoInOut, easeExpoOut,
   easeSineIn, easeSineInOut, easeSineOut,
+  cubicBezier
+} from './extra';
+import {
   easeBackIn, easeBackInOut, easeBackOut,
   easeBounceIn, easeBounceInOut, easeBounceOut,
   easeElasticIn, easeElasticInOut, easeElasticOut,
-  back, bounce, elastic, easeLinear, cubicBezier
-} from './easing';
+  back, bounce, elastic
+} from './outbound';
+
+export const easeLinear = identity<number>;
 
 export {
   in2out, out2in, in2inOut, out2inOut,
@@ -26,8 +33,5 @@ export {
   easeBackIn, easeBackInOut, easeBackOut,
   easeBounceIn, easeBounceInOut, easeBounceOut,
   easeElasticIn, easeElasticInOut, easeElasticOut,
-  back, bounce, elastic, easeLinear,
-  cubicBezier, VizAnimation
+  back, bounce, elastic, linear, cubicBezier
 };
-
-export default animate;

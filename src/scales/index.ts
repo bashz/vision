@@ -1,4 +1,4 @@
-import Scale from '@/scales/Scale';
-import LogScale from '@/scales/LogScale';
+import Scale from './Scale';
+import LogScale from './LogScale';
 
 export {Scale, LogScale};

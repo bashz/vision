@@ -1,5 +1,5 @@
-import { ArrayOfTwoNumbers, Transformation } from '#/global.d';
-import { normalize, interpolate, logNormalize, logInterpolate } from '@/utils';
+import { ArrayOfTwoNumbers, Transformation } from '../../types/global.d';
+import { normalize, interpolate, logNormalize, logInterpolate } from '../utils';
 import Scale from './Scale';
 
 export default class LogScale extends Scale {

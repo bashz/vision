@@ -1,5 +1,5 @@
-import { ArrayOfTwoNumbers, Transformation } from '#/global.d';
-import { transformLinear, normalize, interpolate } from '@/utils';
+import { ArrayOfTwoNumbers, Transformation } from '../../types/global.d';
+import { transformLinear, normalize, interpolate } from '../utils';
 
 export default class Scale {
   domain: ArrayOfTwoNumbers = [0, 1];

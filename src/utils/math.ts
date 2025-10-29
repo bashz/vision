@@ -1,7 +1,7 @@
 import { NumericTransformation } from '#/global.d';
 
 // silly operations
-export function indentity<T>(x: T): T {
+export function identity<T>(x: T): T {
   return x;
 };
 
@@ -36,7 +36,7 @@ export function logInterpolate(r: number, r0: number, r1: number): number {
 
 // transformations
 export function transformLinear(x: number): number {
-  return indentity<number>(x);
+  return identity<number>(x);
 };
 
 export function transformPower(x: number, exponent: number): number {
