@@ -82,4 +82,3 @@ var yScale = ref(new Scale([0, 100], yRange));
   height: 100%;
 }
 </style>
-anthony.bastide@septeo.com
